@@ -32,7 +32,12 @@
 	"dependencies": {
 		"@bem-react/classname": "^1.6.0"
 	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
 	"lint-staged": {
-		"*.--write": "prettier --write"
+		"*": "prettier --write"
 	}
 }
