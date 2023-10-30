@@ -1,0 +1,36 @@
+@import "../../global.scss";
+
+.inject-special-offer {
+  &-container {
+    padding: 11px 16px 13px 16px;
+    background-color: $background-creamy;
+    border-radius: 8px;
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 16px;
+    }
+  }
+  &-content {
+    font-size: $text-small;
+    color: $text-light;
+  }
+  &-company-icon {
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 2px;
+  }
+  &-title {
+    margin-right: 5px;
+  }
+  &-amount {
+    margin-right: 14px;
+    font-size: $text-big;
+    color: $text-dark;
+  }
+  &-pre-offer-title {
+    margin-right: 5px;
+  }
+  &-pre-offer-amount {
+    font-size: $text-big;
+  }
+}
