@@ -5,7 +5,8 @@
 	"scripts": {
 		"start": "webpack --watch",
 		"build": "webpack",
-		"format": "prettier . --write"
+		"format": "prettier . --write",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.23.2",
@@ -18,6 +19,8 @@
 		"copy-webpack-plugin": "^11.0.0",
 		"css-loader": "^6.8.1",
 		"dom-chef": "^5.1.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.0.2",
 		"mini-css-extract-plugin": "^2.7.6",
 		"prettier": "3.0.3",
 		"sass": "^1.69.5",
@@ -28,5 +31,8 @@
 	},
 	"dependencies": {
 		"@bem-react/classname": "^1.6.0"
+	},
+	"lint-staged": {
+		"*.--write": "prettier --write"
 	}
 }
