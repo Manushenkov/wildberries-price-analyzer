@@ -1,24 +1,24 @@
 {
-  "name": "wildberries-analyzer",
-  "version": "1.0",
-  "manifest_version": 3,
-  "description": "Wildberries analyser chrome extension made as a tech assessment",
-  "background": {
-    "service_worker": "serviceWorker.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["https://*.wildberries.ru/*", "https://*.wb.ru/*"],
-      "css": ["contentScript.css"],
-      "js": ["contentScript.js"]
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": ["*.map"],
-      "matches": ["https://*.wildberries.ru/*", "https://*.wb.ru/*"]
-    }
-  ],
-  "permissions": ["webRequest"],
-  "host_permissions": ["https://*.wildberries.ru/*", "https://*.wb.ru/*"]
+	"name": "wildberries-analyzer",
+	"version": "1.0",
+	"manifest_version": 3,
+	"description": "Wildberries analyser chrome extension made as a tech assessment",
+	"background": {
+		"service_worker": "serviceWorker.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://*.wildberries.ru/*", "https://*.wb.ru/*"],
+			"css": ["contentScript.css"],
+			"js": ["contentScript.js"]
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["*.map"],
+			"matches": ["https://*.wildberries.ru/*", "https://*.wb.ru/*"]
+		}
+	],
+	"permissions": ["webRequest"],
+	"host_permissions": ["https://*.wildberries.ru/*", "https://*.wb.ru/*"]
 }

@@ -1,6 +1,6 @@
-const CATALOG = "catalog";
+const CATALOG = 'catalog'
 
 export default function getCardId() {
-  const splitPath = document.location.pathname.split("/");
-  return splitPath[splitPath.indexOf(CATALOG) + 1];
+	const splitPath = document.location.pathname.split('/')
+	return splitPath[splitPath.indexOf(CATALOG) + 1]
 }

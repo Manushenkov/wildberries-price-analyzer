@@ -1,30 +1,32 @@
 {
-  "name": "wildberries-analyzer",
-  "version": "1",
-  "description": "Wildberries analyser chrome extension made as a tech assessment",
-  "devDependencies": {
-    "@babel/core": "^7.23.2",
-    "@babel/plugin-transform-react-jsx": "^7.22.15",
-    "@babel/plugin-transform-runtime": "^7.23.2",
-    "@babel/preset-env": "^7.23.2",
-    "@babel/preset-typescript": "^7.23.2",
-    "@types/chrome": "^0.0.248",
-    "babel-loader": "^9.1.3",
-    "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^6.8.1",
-    "dom-chef": "^5.1.0",
-    "mini-css-extract-plugin": "^2.7.6",
-    "sass": "^1.69.5",
-    "sass-loader": "^13.3.2",
-    "typescript": "^5.2.2",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
-  },
-  "scripts": {
-    "start": "webpack --watch",
-    "build": "webpack"
-  },
-  "dependencies": {
-    "@bem-react/classname": "^1.6.0"
-  }
+	"name": "wildberries-analyzer",
+	"version": "1",
+	"description": "Wildberries analyser chrome extension made as a tech assessment",
+	"scripts": {
+		"start": "webpack --watch",
+		"build": "webpack",
+		"format": "prettier . --write"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.23.2",
+		"@babel/plugin-transform-react-jsx": "^7.22.15",
+		"@babel/plugin-transform-runtime": "^7.23.2",
+		"@babel/preset-env": "^7.23.2",
+		"@babel/preset-typescript": "^7.23.2",
+		"@types/chrome": "^0.0.248",
+		"babel-loader": "^9.1.3",
+		"copy-webpack-plugin": "^11.0.0",
+		"css-loader": "^6.8.1",
+		"dom-chef": "^5.1.0",
+		"mini-css-extract-plugin": "^2.7.6",
+		"prettier": "3.0.3",
+		"sass": "^1.69.5",
+		"sass-loader": "^13.3.2",
+		"typescript": "^5.2.2",
+		"webpack": "^5.89.0",
+		"webpack-cli": "^5.1.4"
+	},
+	"dependencies": {
+		"@bem-react/classname": "^1.6.0"
+	}
 }
