@@ -1,10 +1,12 @@
+const XINFO_URL = 'https://www.wildberries.ru/webapi/user/get-xinfo-v2'
+
 interface Xinfo {
 	xinfo: string
 	shard: number
 }
 
 export default async function fetchXinfo(): Promise<string> {
-	const result = await fetch('https://www.wildberries.ru/webapi/user/get-xinfo-v2', {
+	const result = await fetch(XINFO_URL, {
 		method: 'POST',
 		headers: {
 			'X-Requested-With': 'XMLHttpRequest',
